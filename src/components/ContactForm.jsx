@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
 
 const ContactForm = () => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -36,8 +35,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="section-bg  fadeInUp">
-  
+    <div id="contact" className="section-bg wow fadeInUp">
       <div className="container">
         <div className="section-header">
           <h2>Contact Us</h2>
@@ -99,7 +97,7 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -255,8 +255,16 @@ h6 {
 /* Nav Meu Container */
 
 #nav-menu-container {
-  float: right;
+  position: fixed;
+  overflow: hidden;
+  right: 0;
+  display: flex; /* Use flexbox */
+  justify-content: flex-end; /* Align items to the right */
   margin: 0;
+  z-index: 100;
+  background-color: #000;
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Nav Meu Styling */

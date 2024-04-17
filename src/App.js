@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Team from './components/Team';
 import Newsletter from './components/Newsletter';
 import Magazine from './components/Magazine';
-import Contact from './components/Contact';
+import ContactForm from './components/Contact';
 import Event from './components/Events';
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route exact path='/events' element={<Event/>}></Route>
           <Route exact path='/newsletter' element={<Newsletter/>}></Route>
           <Route exact path='/magazine' element={<Magazine/>}></Route>
-          <Route exact path='/contact' element={<Contact/>}></Route>
+          <Route exact path='/contact' element={<ContactForm/>}></Route>
         </Routes>
       </div>
     </Router>

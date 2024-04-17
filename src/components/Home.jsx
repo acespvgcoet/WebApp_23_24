@@ -5,6 +5,7 @@ import Footer from './Footer';
 import FAQs from './Home_Components/FAQs';
 import Location from './Home_Components/Location';
 import Sponsors from './Home_Components/Sponsors';
+import Navbar from './Navbar';
 const Home = () => {
   return (
     <div>

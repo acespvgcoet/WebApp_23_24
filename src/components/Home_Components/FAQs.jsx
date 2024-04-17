@@ -15,7 +15,6 @@ const FAQs = () => {
                   What do we do? <i className="fa fa-minus-circle"></i>
                 </a>
                 <div id="faq1" className="collapse" data-parent="#faq-list">
-                  <p>
                     ACES looks forward to the welfare of its students by conducting ambitious conferences and workshops.
                     Events are held to broaden the skill set of our students and assist them in their domain. At ACES,
                     we encourage participation in academics as well as extra-curricular activities.
@@ -30,7 +29,6 @@ const FAQs = () => {
                         showcase their skills in different domains
                       </li>
                     </ul>
-                  </p>
                 </div>
               </li>
 
