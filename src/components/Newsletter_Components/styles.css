@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-family: 'Manrope', sans-serif;
+}
+
+.card {
+    width: 350px;
+    border: 1px solid #E6E5FF;
+    border-radius: 10px;
+    background-color: #F4F6F9;
+    margin: 25px 10px;
+}
+
+.card:hover {
+    box-shadow: 0 24px 72px 0 rgba(96, 93, 255, .1);
+    border: 1px solid #DFE6EE;
+}
+
+.card-img {
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+img {
+    width: 350px;
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+
+.card-content {
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.article-topic {
+    width: 35%;
+    height: 35px;
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: #2E5A8C;
+    background-color: #DFE6EE;
+}
+
+.article-topic>p {
+    margin: auto;
+}
+
+.article-content>h2 {
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.article-content>p {
+    font-weight: 400;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-author>p {
+    margin: 0px;
+    font-weight: 800;
+}
+
+.go-to-article-button {
+    /* padding: 8px; */
+    height: 35px;
+    width: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #E6E5FF;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.go-to-article-button svg {
+    width: 64px;
+    stroke: #2E5A8C;
+}
+
+.go-to-article-button:hover {
+    border: 1px solid #605DFF;
+}

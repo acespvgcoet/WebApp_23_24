@@ -5,13 +5,13 @@ const Navbar = () => {
     <div className="nav-containter">
       <nav id="nav-menu-container" >
         <div id="logo" classNme="pull-left" >
-          <a href="#intro">
+          {/* <a href="#intro">
             <img
               src={"/img/ACES Logo White Transparent.png"}
               alt=""
               title="" style={{"width" : "8vh"}}
             />
-          </a>
+          </a> */}
         </div>
         <ul className="nav-menu">
           <li>

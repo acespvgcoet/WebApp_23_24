@@ -1,5 +1,5 @@
 import React from "react";
-import "./team.css";
+import "./css/team.css";
 
 const Team = () => {
   const [teamData, setTeamData] = React.useState([]);
