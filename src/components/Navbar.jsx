@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <header id="header" className={scrolled ? "header-scrolled" : ""}>
-      <div className="container">
+      <div className="contain">
         <div id="logo" class="pull-left">
           <img src="img/ACES Logo White Transparent.png" id="img" alt="" />
         </div>
