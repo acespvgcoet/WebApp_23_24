@@ -80,7 +80,6 @@ img {
 }
 
 .go-to-article-button {
-    /* padding: 8px; */
     height: 35px;
     width: 75px;
 
@@ -88,16 +87,20 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    background-color: #E6E5FF;
+    background-color: #f82249;
     transition: all 0.2s ease-in-out;
     border: 1px solid transparent;
 }
 
 .go-to-article-button svg {
     width: 64px;
-    stroke: #2E5A8C;
+    stroke: white;
 }
 
 .go-to-article-button:hover {
-    border: 1px solid #605DFF;
+    border: 1px solid brown;
+    background-color: #ff274e;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
 }
