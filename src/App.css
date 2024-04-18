@@ -1223,61 +1223,30 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #contact {
-  padding: 60px 0;
+  padding: 60px;
 }
 
-#contact .contact-info {
-  margin-bottom: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+#contact .section-header{
+  margin-top: 70px;
+  padding: 0;
+} 
+
+.form {
+  margin-top: 140px;
+  padding: 20px;
+
 }
 
-#contact .contact-info i {
-  font-size: 48px;
-  display: inline-block;
-  margin-bottom: 10px;
-  color: #f82249;
-}
-
-#contact .contact-info address,
-#contact .contact-info p {
-  margin-bottom: 0;
-  color: #112363;
-}
-
-#contact .contact-info h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #112363;
-}
-
-#contact .contact-info a {
-  color: #4869df;
-}
-
-#contact .contact-info a:hover {
-  color: #f82249;
-}
-
-#contact .contact-address,
-#contact .contact-phone,
-#contact .contact-email {
-  margin-bottom: 20px;
-}
-
-#contact .contact-email {
-  justify-self: center;
+.form .text-center{
+  padding: 20px;
 }
 
 #contact .form #sendmessage {
-  color: #f82249;
+  color: #f82239;
   border: 1px solid #f82249;
   display: none;
   text-align: center;
-  padding: 15px;
+  padding: 30px;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -1311,13 +1280,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 10px 14px;
   border-radius: 0;
   box-shadow: none;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 #contact .form button[type="submit"] {
   background: #f82249;
   border: 0;
-  padding: 10px 40px;
+  padding: 15px 40px;
+  font-size: 20px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
