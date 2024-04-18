@@ -13,6 +13,7 @@ body {
   background: #fff;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -111,223 +112,11 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 
-#header {
-  height: 90px;
-  padding: 25px 0;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  transition: all 0.5s;
-  z-index: 997;
-}
-
-#header.header-scrolled,
-#header.header-fixed {
-  background: rgba(6, 12, 34, 0.98);
-  height: 70px;
-  padding: 15px 0;
-  transition: all 0.5s;
-}
-
-#header #logo h1 {
-  font-size: 36px;
-  margin: 0;
-  padding: 6px 0;
-  line-height: 1;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-#header #logo h1 span {
-  color: #f82249;
-}
-
-#header #logo h1 a,
-#header #logo h1 a:hover {
-  color: #fff;
-}
-
-#header #logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
-}
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 
 /* Nav Menu Essentials */
-
-.nav-menu,
-.nav-menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.nav-menu ul {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  z-index: 99;
-}
-
-.nav-menu li {
-  position: relative;
-  white-space: nowrap;
-}
-
-.nav-menu > li {
-  float: left;
-}
-
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
-  display: block;
-}
-
-.nav-menu ul ul {
-  top: 0;
-  left: 100%;
-}
-
-.nav-menu ul li {
-  min-width: 180px;
-}
-
-/* Nav Menu Arrows */
-
-.sf-arrows .sf-with-ul {
-  padding-right: 30px;
-}
-
-.sf-arrows .sf-with-ul:after {
-  content: "\f107";
-  position: absolute;
-  right: 15px;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.sf-arrows ul .sf-with-ul:after {
-  content: "\f105";
-}
-
-/* Nav Meu Container */
-
-#nav-menu-container {
-  position: fixed;
-  overflow: hidden;
-  right: 0;
-  display: flex; /* Use flexbox */
-  justify-content: flex-end; /* Align items to the right */
-  margin: 0;
-  z-index: 100;
-  background-color: #000;
-  width: 100%;
-  z-index: 1000;
-}
-
-/* Nav Meu Styling */
-
-.nav-menu a {
-  padding: 8px;
-  text-decoration: none;
-  display: inline-block;
-  color: rgba(202, 206, 221, 0.8);
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  outline: none;
-}
-
-.nav-menu .menu-active a,
-.nav-menu a:hover {
-  color: #fff;
-}
-
-.nav-menu > li {
-  margin-left: 8px;
-}
-
-.nav-menu > li > a:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #f82249;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.nav-menu a:hover:before,
-.nav-menu li:hover > a:before,
-.nav-menu .menu-active > a:before {
-  visibility: visible;
-  width: 100%;
-}
-
-.nav-menu li.buy-tickets a {
-  color: #fff;
-  background: #f82249;
-  padding: 7px 22px;
-  border-radius: 50px;
-  border: 2px solid #f82249;
-  transition: all ease-in-out 0.3s;
-  font-weight: 500;
-  margin-left: 8px;
-  margin-top: 2px;
-  line-height: 1;
-  font-size: 13px;
-}
-
-.nav-menu li.buy-tickets a:hover {
-  background: none;
-}
-
-.nav-menu li.buy-tickets:hover a:before,
-.nav-menu li.buy-tickets.menu-active a:before {
-  visibility: hidden;
-}
-
-.nav-menu ul {
-  margin: 4px 0 0 0;
-  padding: 10px;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: #fff;
-  border-radius: 3px;
-}
-
-.nav-menu ul li {
-  transition: 0.3s;
-}
-
-.nav-menu ul li a {
-  padding: 10px;
-  color: #060c22;
-  transition: 0.3s;
-  display: block;
-  font-size: 13px;
-  text-transform: none;
-  border-radius: 3px;
-}
-
-.nav-menu ul li:hover > a {
-  background: #f82249;
-  color: #fff;
-}
-
-.nav-menu ul ul {
-  margin: 0;
-}
 
 /* Mobile Nav Toggle */
 
@@ -1223,30 +1012,61 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #contact {
-  padding: 60px;
+  padding: 60px 0;
 }
 
-#contact .section-header{
-  margin-top: 70px;
-  padding: 0;
-} 
-
-.form {
-  margin-top: 140px;
-  padding: 20px;
-
+#contact .contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.form .text-center{
-  padding: 20px;
+#contact .contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #f82249;
+}
+
+#contact .contact-info address,
+#contact .contact-info p {
+  margin-bottom: 0;
+  color: #112363;
+}
+
+#contact .contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #112363;
+}
+
+#contact .contact-info a {
+  color: #4869df;
+}
+
+#contact .contact-info a:hover {
+  color: #f82249;
+}
+
+#contact .contact-address,
+#contact .contact-phone,
+#contact .contact-email {
+  margin-bottom: 20px;
+}
+
+#contact .contact-email {
+  justify-self: center;
 }
 
 #contact .form #sendmessage {
-  color: #f82239;
+  color: #f82249;
   border: 1px solid #f82249;
   display: none;
   text-align: center;
-  padding: 30px;
+  padding: 15px;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -1280,14 +1100,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 10px 14px;
   border-radius: 0;
   box-shadow: none;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #contact .form button[type="submit"] {
   background: #f82249;
   border: 0;
-  padding: 15px 40px;
-  font-size: 20px;
+  padding: 10px 40px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;

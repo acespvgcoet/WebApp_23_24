@@ -19,10 +19,11 @@ function createCard(item) {
 
 const Newsletter = () => {
   return (
+    <div className="background">
     <div className="container">
       
       {content.map(createCard)}
-      
+    </div>
     </div>
   );
 }
