@@ -2,15 +2,19 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+
     font-family: 'Manrope', sans-serif;
+    padding: 50px 50px 0 50px;
 }
 
 .card {
-    width: 350px;
+    width: 275px;
+    height: 400px;
     border: 1px solid #E6E5FF;
     border-radius: 10px;
     background-color: #F4F6F9;
-    margin: 25px 10px;
+    /* margin: 25px 10px; */
+    margin: 20px 35px 20px 35px ;
 }
 
 .card:hover {
@@ -19,27 +23,26 @@
 }
 
 .card-img {
-    height: 300px;
+    height: 130px;
     border-radius: 10px 10px 0px 0px;
 }
 
 img {
-    width: 350px;
-    height: 300px;
+    height: 100%;
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
 }
 
 .card-content {
-    margin: 20px 20px 20px 20px;
+    margin: 10px 20px 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
 }
 
 .article-topic {
-    width: 35%;
+    width: 100px;
     height: 35px;
     padding: 4px 12px;
     display: flex;
@@ -51,15 +54,17 @@ img {
 
 .article-topic>p {
     margin: auto;
+    font-family: "Rubik";
 }
 
-.article-content>h2 {
+.article-content>h5 {
     font-weight: 700;
-    margin-top: 20px;
+    margin: 10px 0 10px 0;
 }
 
 .article-content>p {
     font-weight: 400;
+    margin: 0 0 10px 0;
 }
 
 .card-bottom {
@@ -71,6 +76,7 @@ img {
 .article-author>p {
     margin: 0px;
     font-weight: 800;
+    font-family: "Rubik";
 }
 
 .go-to-article-button {
