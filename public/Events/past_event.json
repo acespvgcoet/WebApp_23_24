@@ -1,16 +1,35 @@
 [
-  {
-    "status": "Past events"
-  },
-  {
-    "name": "Anime Quiz",
-    "reg_link": "",
-    "img": "Assets\\team\\Jyotsna Hegde.jpg"
-  },
-  {
-    "name": "Blind Coding",
-    "reg_link": "",
-    "img": "Assets\\team\\Jyotsna Hegde.jpg"
-  }
+    {
+      "status": "Past events"
+    },
+    {
+      "name": "Anime Quiz",
+      "reg_link": "df",
+      "isRegOpen": "Registrations Closed",
+      "img": "\\Assets\\events\\Algorhythm2k24\\AnimeQuiz.png"
+    },
+    {
+      "name": "Anime Quiz",
+      "reg_link": "df",
+      "isRegOpen": "Registrations Closed",
+      "img": "\\Assets\\events\\Algorhythm2k24\\AnimeQuiz.png"
+    },
+    {
+      "name": "Anime Quiz",
+      "reg_link": "df",
+      "isRegOpen": "Registrations Closed",
+      "img": "\\Assets\\events\\Algorhythm2k24\\AnimeQuiz.png"
+    },
+    {
+      "name": "Anime Quiz",
+      "reg_link": "df",
+      "isRegOpen": "Registrations Closed",
+      "img": "\\Assets\\events\\Algorhythm2k24\\AnimeQuiz.png"
+    },
+    {
+      "name": "Anime Quiz",
+      "reg_link": "df",
+      "isRegOpen": "Registrations Closed",
+      "img": "\\Assets\\events\\Algorhythm2k24\\AnimeQuiz.png"
+    }
 ]
-  
