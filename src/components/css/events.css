@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/meetings-bg.jpg");
+}
+
+.event_teamName {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.event_eventname {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+  color: white;
+  font-weight: 700;
+  padding-top: 10rem;
+}
+
+.event_maindiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.event_subdiv {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.event_subdiv .event_card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-image: url("../images/service-item-bg.jpg");
+  margin: 20px;     
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.event_5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.event_subdiv .event_card .event_content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  opacity: 0.event_8;
+  transition: 0.event_5s;
+}
+.event_subdiv .event_card:hover .event_content {
+  opacity: 1;
+  transform: translateY(-30px);
+}
+.event_subdiv .event_card .event_content .event_imgBx {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 5%;
+  overflow: hidden;
+  border: 2px solid rgb(233, 233, 233);
+}
+.event_subdiv .event_card .event_content .event_imgBx img {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.event_subdiv .event_card .event_content .event_contentBx h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.event_1em;
+}
+.event_subdiv .event_card .event_content .event_contentBx h3 span {
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.event_subdiv .event_card .event_sci {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  left: 50px;
+}
+
+.event_subdiv .event_card .event_sci li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  transition: 0.event_5s;
+  transition-delay: calc(0.event_1s * var(--i));
+  opacity: 0;
+  align-content: center;
+}
+.event_subdiv .event_card:hover .event_sci li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.event_subdiv .event_card .event_sci li a {
+  color: #fff;
+  font-size: 30px;
+}
