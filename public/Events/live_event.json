@@ -1,13 +1,13 @@
 [
   [
     {
-      "status": "Live Events"
+      "status": "LIVE EVENTS"
     },
     {
-      "name": "Anime Quiz",
-      "reg_link": "df",
+      "name": "FareWell Party",
+      "reg_link": "https://forms.gle/j3HthTxZpHCTn2n89",
       "isRegOpen": "Registrations Open",
-      "img": "\\Assets\\events\\Algorhythm2k24\\AnimeQuiz.png"
+      "img": "\\Assets\\events\\FareWell.jpeg"
     }
   ]
 ]

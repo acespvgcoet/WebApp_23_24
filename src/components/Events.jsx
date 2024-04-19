@@ -22,6 +22,7 @@ const Events = () => {
   return (
     <div id="team">
       <h1 className="event_eventname">ACES Events 2023-24</h1>
+      <p className="event_tag">Experience the legacy of past events and the excitement of live events, all in one place – your gateway to departmental excellence.</p>
       {eventData.map((row, i) => (
         <div key={i} className="event_maindiv">
           <div className="event_teamName">{row[0].status}</div>
@@ -38,15 +39,13 @@ const Events = () => {
                         <div class="event_contentBx">
                           <h3>
                             {obj.name}
-                            <br />
-                            <span>{obj.position}</span>
                           </h3>
                         </div>
                       </div>
                       <ul class="event_sci">
                         <li style={{ "--i": 1 }}>
                           <a href={obj.reg_link}>
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <i class="fa fa-link" aria-hidden="true"></i>
                           </a>
                         </li>
                         <li style={{ "--i": 1 }}>
