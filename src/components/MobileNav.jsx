@@ -8,6 +8,7 @@ const MobileNav = () => {
 
   const [scrolled, setIsScrolled] = React.useState(false);
 
+  const menuRef = React.useRef();
   React.useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -16,12 +17,19 @@ const MobileNav = () => {
         setIsScrolled(false);
       }
     };
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowMenu(false);
+      }
+    };
+    window.addEventListener("click", handleClickOutside);
 
     window.addEventListener("scroll", handleScroll);
 
     // Cleanup function to remove the scroll event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
@@ -69,25 +77,37 @@ const MobileNav = () => {
               }
             >
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={toggleMenu}>
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/team">Team</Link>
+                <Link to="/team" onClick={toggleMenu}>
+                  Team
+                </Link>
               </li>
               <li>
-                <Link to="/events">Events</Link>
+                <Link to="/events" onClick={toggleMenu}>
+                  Events
+                </Link>
               </li>
               <li>
-                <Link to="/newsletter">NewsLetter</Link>
+                <Link to="/newsletter" onClick={toggleMenu}>
+                  NewsLetter
+                </Link>
               </li>
               <li>
-                <Link to="/magazine">Magazine</Link>
+                <Link to="/magazine" onClick={toggleMenu}>
+                  Magazine
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" onClick={toggleMenu}>
+                  Contact
+                </Link>
               </li>
 
-              <li className="buy-tickets">
+              <li className="buy-tickets" onClick={toggleMenu}>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSczXQK-AuWDGv13yABEy8Y8RpSc5_Uuf4e57wK2KsQCQbQPDw/viewform?usp=sf_link"
                   target="_blank"

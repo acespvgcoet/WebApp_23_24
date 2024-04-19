@@ -1,11 +1,14 @@
 import React from "react";
 
 const Sponsors = () => {
+  const style = {
+    color: "red",
+  };
   return (
     <section id="sponsors" className="section-with-bg ">
       <div className="container">
         <div className="section-header">
-          <h2>Sponsors</h2>
+          <h2 style={style}>Sponsors</h2>
         </div>
 
         <div className="row no-gutters sponsors-wrap clearfix">

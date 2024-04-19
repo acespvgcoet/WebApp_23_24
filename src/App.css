@@ -723,6 +723,12 @@ h6 {
   transition: all 0.4s ease-in-out;
 }
 
+@media (max-width: 750px) {
+  .sponsor-logo {
+    width: 600px;
+  }
+}
+
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/
@@ -1205,9 +1211,6 @@ h6 {
   #subscribe {
     background-attachment: fixed;
   }
-}
-
-@media (max-width: 1199px) {
 }
 
 @media (max-width: 991px) {

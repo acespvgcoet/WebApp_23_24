@@ -9,7 +9,7 @@
   width: 260px;
   display: flex;
   flex-direction: column;
-  transition: 0.4s;
+  transition: all 0.5s;
   list-style: none;
   text-align: center;
   color: white;
