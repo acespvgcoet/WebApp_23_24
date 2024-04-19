@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import Navbar from './Navbar';
+import React, { useState } from "react";
+import Navbar from "./Navbar";
+import "./css/contact.css";
 
 const ContactForm = () => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showErrorMessage, setShowErrorMessage] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,12 +17,12 @@ const ContactForm = () => {
         method: form.method,
         body: formData,
         headers: {
-          Accept: 'application/json',
+          Accept: "application/json",
         },
       });
 
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error("Network response was not ok");
       }
 
       setShowSuccessMessage(true);
@@ -30,24 +31,25 @@ const ContactForm = () => {
     } catch (error) {
       setShowSuccessMessage(false);
       setShowErrorMessage(true);
-      setErrorMessage('There was an error submitting the form. Please try again later.');
-      console.error('Error submitting form:', error);
+      setErrorMessage(
+        "There was an error submitting the form. Please try again later."
+      );
+      console.error("Error submitting form:", error);
     }
   };
 
   return (
     <section id="contact" className="section-bg  fadeInUp">
-  
       <div className="container">
         <div className="section-header">
           <h2>Contact Us</h2>
         </div>
 
         <div className="form">
-          <div id="sendmessage" className={showSuccessMessage ? 'show' : ''}>
+          <div id="sendmessage" className={showSuccessMessage ? "show" : ""}>
             Your message has been sent. Thank you!
           </div>
-          <div id="errormessage" className={showErrorMessage ? 'show' : ''}>
+          <div id="errormessage" className={showErrorMessage ? "show" : ""}>
             {errorMessage}
           </div>
           <form

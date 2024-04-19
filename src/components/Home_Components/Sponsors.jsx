@@ -2,7 +2,7 @@ import React from "react";
 
 const Sponsors = () => {
   const style = {
-    color: "red",
+    color: "rgba(6, 12, 34, 0.98)",
   };
   return (
     <section id="sponsors" className="section-with-bg ">
@@ -15,7 +15,7 @@ const Sponsors = () => {
           <div className="col-lg-4 col-md-4 col-xs-4">
             <div className="sponsor-logo">
               <img
-                src="Assets/sponsors/sarvaha.jpg"
+                src="Assets/sponsors/starcopiers.png"
                 className="img-fluid"
                 alt=""
               />
@@ -25,7 +25,7 @@ const Sponsors = () => {
           <div className="col-lg-4 col-md-4 col-xs-4">
             <div className="sponsor-logo">
               <img
-                src="Assets/sponsors/versatalia.jpeg"
+                src="Assets/sponsors/Reckoning Logos_Black.png"
                 className="img-fluid"
                 alt=""
               />
@@ -35,7 +35,7 @@ const Sponsors = () => {
           <div className="col-lg-4 col-md-4 col-xs-4">
             <div className="sponsor-logo">
               <img
-                src="Assets/sponsors/mentami.jpg"
+                src="Assets/sponsors/dAppWorld.jpg"
                 className="img-fluid"
                 alt=""
               />
