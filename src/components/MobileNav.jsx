@@ -27,7 +27,7 @@ const MobileNav = () => {
 
   React.useEffect(() => {
     const handleScreenSize = () => {
-      if (window.outerWidth < 700) {
+      if (window.outerWidth < 779) {
         setShowHamburger(true);
       } else {
         setShowHamburger(false);
@@ -65,7 +65,7 @@ const MobileNav = () => {
               className={
                 showHamburger && showMenu
                   ? "nav-menu-mobile"
-                  : `nav-menu${window.outerWidth < 700 ? "-none" : ""}`
+                  : `nav-menu${window.outerWidth < 779 ? "-none" : ""}`
               }
             >
               <li>
