@@ -78,32 +78,32 @@ const MobileNav = () => {
             >
               <li>
                 <Link to="/" onClick={toggleMenu}>
-                  Home
+                  <span className="text">Home</span>
                 </Link>
               </li>
               <li>
                 <Link to="/team" onClick={toggleMenu}>
-                  Team
+                  <span className="text">Team</span>
                 </Link>
               </li>
               <li>
                 <Link to="/events" onClick={toggleMenu}>
-                  Events
+                  <span className="text">Events</span>
                 </Link>
               </li>
               <li>
                 <Link to="/newsletter" onClick={toggleMenu}>
-                  NewsLetter
+                  <span className="text">Newsletter</span>
                 </Link>
               </li>
               <li>
                 <Link to="/magazine" onClick={toggleMenu}>
-                  Magazine
+                  <span className="text">Magazine</span>
                 </Link>
               </li>
               <li>
                 <Link to="/contact" onClick={toggleMenu}>
-                  Contact
+                  <span className="text">Contact</span>
                 </Link>
               </li>
 
@@ -113,7 +113,7 @@ const MobileNav = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Register Now
+                  <span className="text">Register Now</span>
                 </a>
               </li>
             </ul>
