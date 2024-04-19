@@ -6,15 +6,14 @@ const Events = () => {
 
   React.useEffect(() => {
     const fetchData = async () => {
-      
       const live_events = await fetch("/Events/live_event.json");
       const past_events = await fetch("/Events/past_event.json");
 
       const liveEventsData = await live_events.json();
       const pastEventsData = await past_events.json();
-      
+
       setEventData(liveEventsData);
-      setEventData((eventData) => [...eventData, pastEventsData]);      
+      setEventData((eventData) => [...eventData, pastEventsData]);
     };
     fetchData();
   }, []);
@@ -22,7 +21,10 @@ const Events = () => {
   return (
     <div id="team">
       <h1 className="event_eventname">ACES Events 2023-24</h1>
-      <p className="event_tag">Experience the legacy of past events and the excitement of live events, all in one place – your gateway to departmental excellence.</p>
+      <p className="event_tag">
+        Experience the legacy of past events and the excitement of live events,
+        all in one place – your gateway to departmental excellence.
+      </p>
       {eventData.map((row, i) => (
         <div key={i} className="event_maindiv">
           <div className="event_teamName">{row[0].status}</div>
@@ -34,12 +36,12 @@ const Events = () => {
                     <div class="event_card">
                       <div class="event_content">
                         <div class="event_imgBx">
-                          <img src={obj.img} alt="" />
+                          <a href={obj.reg_link}>
+                            <img src={obj.img} alt="" />
+                          </a>
                         </div>
                         <div class="event_contentBx">
-                          <h3>
-                            {obj.name}
-                          </h3>
+                          <h3>{obj.name}</h3>
                         </div>
                       </div>
                       <ul class="event_sci">
@@ -48,9 +50,7 @@ const Events = () => {
                             <i class="fa fa-link" aria-hidden="true"></i>
                           </a>
                         </li>
-                        <li style={{ "--i": 1 }}>
-                          {obj.isRegOpen}
-                        </li>
+                        <li style={{ "--i": 1 }}>{obj.isRegOpen}</li>
                       </ul>
                     </div>
                   )}
