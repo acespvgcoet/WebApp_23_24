@@ -51,7 +51,7 @@ const Navbar = () => {
 
             <li className="buy-tickets">
               <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSczXQK-AuWDGv13yABEy8Y8RpSc5_Uuf4e57wK2KsQCQbQPDw/viewform?usp=sf_link"
+                to="https://docs.google.com/forms/d/e/1FAIpQLSczXQK-AuWDGv13yABEy8Y8RpSc5_Uuf4e57wK2KsQCQbQPDw/viewform?usp=sf_link"
                 target="_blank"
               >
                 Register Now
