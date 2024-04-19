@@ -28,7 +28,7 @@ const Navbar = () => {
         <div id="logo" class="pull-left">
           <img src="img/ACES Logo White Transparent.png" id="img" alt="" />
         </div>
-        <nav id="nav-menu-container">
+        <nav id="nav-menu-contain">
           <ul className="nav-menu">
             <li>
               <Link to="/">Home</Link>
