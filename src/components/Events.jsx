@@ -36,7 +36,11 @@ const Events = () => {
                     <div class="event_card">
                       <div class="event_content">
                         <div class="event_imgBx">
-                          <a href={obj.reg_link}>
+                          <a
+                            href={obj.reg_link}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <img src={obj.img} alt="" />
                           </a>
                         </div>
@@ -46,7 +50,11 @@ const Events = () => {
                       </div>
                       <ul class="event_sci">
                         <li style={{ "--i": 1 }}>
-                          <a href={obj.reg_link}>
+                          <a
+                            href={obj.reg_link}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <i class="fa fa-link" aria-hidden="true"></i>
                           </a>
                         </li>

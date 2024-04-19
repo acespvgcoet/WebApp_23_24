@@ -82,6 +82,11 @@
   margin-right: -15px;
   margin-left: -15px;
 }
+
+.img-fluid {
+  width: 350px;
+  height: 400px;
+}
 #speakers {
   padding: 60px 0 30px 0;
 }

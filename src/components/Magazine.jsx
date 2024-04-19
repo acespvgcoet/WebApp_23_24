@@ -13,7 +13,7 @@ const Magazine = () => {
           <div class="row">
             <div class="col-md-6">
               <img
-                src="img/ACES Magazine 2022-23frontpage_page-0001.jpg"
+                src="img\ACES Magazine 2k24 Cover.png"
                 alt={1}
                 class="img-fluid"
               />
