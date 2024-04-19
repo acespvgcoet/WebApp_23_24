@@ -3,29 +3,29 @@ import "./css/Magazine.css";
 
 const Magazine = () => {
   return (
-    <main id="main" class="main-page fadeIn">
-      <div id="speakers-details" class="fadeIn">
-        <div class="container">
-          <div class="section-header">
+    <main id="main" className="main-page fadeIn">
+      <div id="speakers-details" className="fadeIn">
+        <div className="container">
+          <div className="section-header">
             <h2>MAGAZINE</h2>
           </div>
 
-          <div class="row">
-            <div class="col-md-6">
+          <div className="row">
+            <div className="col-md-6 magazine">
               <img
                 src="img\ACES Magazine 2k24 Cover.png"
                 alt={1}
-                class="img-fluid"
+                className="img-fluid"
               />
             </div>
 
-            <div class="col-md-6">
-              <div class="details">
+            <div className="col-md-6">
+              <div className="details">
                 <h2>ACE THE TECH</h2>
-                <div class="social">
+                <div className="social">
                   <p>Download Magazine</p>
                   <a href="ACES Magazine 2022-23.pdf">
-                    <i class="fa fa-download"></i>
+                    <i className="fa fa-download"></i>
                   </a>
                 </div>
 

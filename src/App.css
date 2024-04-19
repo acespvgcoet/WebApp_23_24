@@ -723,9 +723,12 @@ h6 {
   transition: all 0.4s ease-in-out;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
   .sponsor-logo {
-    width: 600px;
+    margin-right: 50px;
+  }
+  .img-fluid {
+    width: 400px;
   }
 }
 

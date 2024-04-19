@@ -31,6 +31,12 @@
   .container {
     max-width: 540px;
   }
+  .magazine {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
   #main {
     height: 200vh;
   }
