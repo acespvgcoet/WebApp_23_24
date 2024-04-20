@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.72e2b39e.css",
+    "main.js": "/static/js/main.38ae0b4a.js",
+    "static/media/Newsletter1.pdf": "/static/media/Newsletter1.fde9fd2a0ff54b67adcc.pdf",
+    "static/media/Newsletter2.pdf": "/static/media/Newsletter2.5a2a763e6ef5b8a8e4b5.pdf",
+    "static/media/blockchain.jpg": "/static/media/blockchain.6bfd594adc13e19b6545.jpg",
+    "static/media/dsa.png": "/static/media/dsa.692c87514571ac82e575.png",
+    "static/media/meetings-bg.jpg": "/static/media/meetings-bg.230aae3ec90cd5b9b42a.jpg",
+    "index.html": "/index.html",
+    "main.72e2b39e.css.map": "/static/css/main.72e2b39e.css.map",
+    "main.38ae0b4a.js.map": "/static/js/main.38ae0b4a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72e2b39e.css",
+    "static/js/main.38ae0b4a.js"
+  ]
+}
